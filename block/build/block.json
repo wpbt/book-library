@@ -6,6 +6,10 @@
   "category": "widgets",
   "description": "Insert book library shortcode",
   "textdomain": "default",
+  "keywords": [
+    "book",
+    "book-library"
+  ],
   "icon": "book",
   "attributes": {
     "text": {

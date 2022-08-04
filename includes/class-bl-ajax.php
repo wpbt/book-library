@@ -35,7 +35,7 @@ final class BL_Ajax {
 
         global $wpdb;
         if ( $title = $wp_query->get( 'search_title' ) ) {
-            $where .= " OR " . $wpdb->posts . ".post_title LIKE '%" . esc_sql( $wpdb->esc_like( $title ) ) . "%'";
+            $where .= " AND " . $wpdb->posts . ".post_title LIKE '%" . esc_sql( $wpdb->esc_like( $title ) ) . "%'";
         }
         
         return $where;

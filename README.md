@@ -15,6 +15,8 @@
 
 1. Updating currency sign:
    `add_filter( 'bl_currency_symbol', function( $symbol ){ return '€'; } );`
+2. Updating form title:
+   `[bl_search_library form_title="Your Custom Filter Title Here..."]`
 
 ## Deactivating the plugin
 

@@ -95,26 +95,28 @@ final class BL_Ajax {
             while( $query->have_posts() ){
                 $query->the_post();
 
-                $id         = get_the_ID();
-                $title      = get_the_title();
-                $book_link  = get_permalink();
-                $book_info  = sprintf( '<a href="%s">%s</a>', esc_url( $book_link ), esc_html( $title ) );
-                $price      = get_post_meta( $id, '_bl_book_price', true );
-                $rating     = get_post_meta( $id, '_bl_book_rating', true );                
-                $publisher  = BookLibraryHelper::get_terms( $id, 'publisher' );
-                $authors    = BookLibraryHelper::get_terms( $id, 'book-author' );
+                $id                 = get_the_ID();
+                $title              = get_the_title();
+                $book_link          = get_permalink();
+                $book_info          = sprintf( '<a href="%s">%s</a>', esc_url( $book_link ), esc_html( $title ) );
+                $price              = get_post_meta( $id, '_bl_book_price', true );
+                $rating             = get_post_meta( $id, '_bl_book_rating', true );                
+                $publisher          = BookLibraryHelper::get_terms( $id, 'publisher' );
+                $authors            = BookLibraryHelper::get_terms( $id, 'book-author' );
+                $currency_symbol    = apply_filters( 'bl_currency_symbol', '$' );
 
                 printf(
                     '<tr>
                         <td>%d</td>
                         <td>%s</td>
-                        <td>%s</td>
+                        <td><span>%s</span>%.2f</td>
                         <td>%s</td>
                         <td>%s</td>
                         <td>%.1f</td>
                     </tr>',
                     $serial_no,
                     $book_info,
+                    $currency_symbol,
                     esc_html( $price ),
                     esc_html( $authors ),
                     esc_html( $publisher ),

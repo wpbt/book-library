@@ -1,0 +1,16 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "Shortcode for adding book library feature to your site",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "keywords": [],
+  "author": "bharat thapa",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "^23.6.0"
+  }
+}

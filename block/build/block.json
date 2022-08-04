@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "book-library/book-library",
+  "title": "Library Shortcode",
+  "category": "widgets",
+  "description": "Insert book library shortcode",
+  "textdomain": "default",
+  "icon": "book",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "source": "html",
+      "default": "[bl_search_library]"
+    }
+  },
+  "supports": {
+    "className": false,
+    "customClassName": false,
+    "html": false
+  },
+  "editorScript": "file:./index.js"
+}

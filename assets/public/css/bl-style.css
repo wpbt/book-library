@@ -1,0 +1,82 @@
+/*
+ * Form CSS
+ */
+
+.bl-shortcode,
+.container.bl-search-form-wrapper {
+    max-width: 780px !important;
+}
+
+.bl-search-form-wrapper h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bl-search-form,
+.bl-col-50 {
+    display: flex;
+}
+
+.bl-search-form {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bl-col-50 {
+    justify-content: space-around;
+}
+
+.bl-search-form p {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.bl-search-form label {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 6px 0 0;
+}
+
+.bl-search-form input[type="text"],
+.bl-search-form select {
+    border: 1px solid grey;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 6px;
+    max-width: 220px;
+    width: 220px;
+}
+
+.bl-search-form select {
+    padding-right: 20px;
+}
+
+.bl-search-form input[type="submit"]{
+    padding: 6px 28px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.bl-submit p {
+    justify-content: center;
+}
+
+.bl-range {
+    width: 50%;
+}
+
+.price-min-range,
+.price-max-range {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.bl-loader {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100px;
+    width: auto;
+}

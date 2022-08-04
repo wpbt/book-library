@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:         Book Library
- * Plugin URI:          #
+ * Plugin URI:          https://github.com/wpbt/book-library
  * Description:         A light-weight plugin for adding book library functionality to your site. 
  * Version:             1.0.0
  * Author:              Bharat Thapa

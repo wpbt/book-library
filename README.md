@@ -7,7 +7,7 @@
 2. Step 2:
    Visit admin area and activate the plugin **Book Library**.
 3. Step 3:
-   Add books in the library from admin area or you can use the
+   Add books in the library from admin area.
 4. Step 4:
    Create a page/post and insert shortcode to filter the library. To inser the block type: `/book-library` in the editor and the block named **Library Shortcode** should appear. Insert it and a filter form should appear in the frontend of the page/post.
 

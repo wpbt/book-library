@@ -80,7 +80,6 @@ final class BookLibrary {
         require_once( BL_ABSPATH . 'includes/class-bl-cpt.php' );
         require_once( BL_ABSPATH . 'includes/class-bl-shortcode.php' );
         require_once( BL_ABSPATH . 'includes/class-bl-ajax.php' );
-        // require_once( BL_ABSPATH . 'block/index.php' );
 
     }
 

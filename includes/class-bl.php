@@ -49,6 +49,8 @@ final class BookLibrary {
 
         // set locale
         add_action( 'init', [ $this, 'set_locale' ] );
+        // load gutenberg block
+        add_action( 'init', [ $this, 'add_book_library_block' ] );
 
     }
 
@@ -78,8 +80,37 @@ final class BookLibrary {
         require_once( BL_ABSPATH . 'includes/class-bl-cpt.php' );
         require_once( BL_ABSPATH . 'includes/class-bl-shortcode.php' );
         require_once( BL_ABSPATH . 'includes/class-bl-ajax.php' );
-        require_once( BL_ABSPATH . 'block/index.php' );
+        // require_once( BL_ABSPATH . 'block/index.php' );
 
+    }
+
+    /**
+     * Add Book Library Gutenberg block
+     * 
+     * @since   1.0.0
+     * @access  public
+     */
+    function add_book_library_block(){
+        register_block_type(
+            BL_ABSPATH . 'block/build',
+            [
+                'render_callback' => [ $this, 'render_book_library_shortcode_callback' ]
+            ]
+        );
+    }
+
+    /**
+     * Gutenberg block render callback
+     * 
+     * @param   Array   $atts
+     * @param   string  $content
+     * @return  string  $content
+     * 
+     * @since   1.0.0
+     * @access  public
+     */
+    function render_book_library_shortcode_callback( $atts, $content ){
+        return wpautop( $content );
     }
 
     /**

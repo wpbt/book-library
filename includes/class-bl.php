@@ -89,7 +89,7 @@ final class BookLibrary {
      * @since   1.0.0
      * @access  public
      */
-    function add_book_library_block(){
+    public function add_book_library_block(){
         register_block_type(
             BL_ABSPATH . 'block/build',
             [
@@ -108,7 +108,7 @@ final class BookLibrary {
      * @since   1.0.0
      * @access  public
      */
-    function render_book_library_shortcode_callback( $atts, $content ){
+    public function render_book_library_shortcode_callback( $atts, $content ){
         return wpautop( $content );
     }
 

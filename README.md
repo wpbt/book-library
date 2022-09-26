@@ -10,6 +10,8 @@
    Add books in the library from admin area.
 4. Step 4:
    Create a page/post and insert shortcode to filter the library. To inser the block type: `/book-library` in the editor and the block named **Library Shortcode** should appear. Insert it and a filter form should appear in the frontend of the page/post.
+5. Step 5:
+   Additionally you can import the sample book library (XML file) available within the plugin directory '/sample_data'.
 
 ## Customizations
 

@@ -1,6 +1,6 @@
 # ignore node dependency directories
 block/node_modules/
-block/src
+block/src/
 
 
 # ignore log files and databases
